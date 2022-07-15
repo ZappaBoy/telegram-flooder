@@ -1,4 +1,5 @@
 import argparse
+import time
 
 from telegram.client import Telegram
 
@@ -59,9 +60,9 @@ def main():
     if args.chat_id is not None and args.text is not None:
         for i in range(args.repeat):
             send_message(connection, args.chat_id, args.text)
+            time.sleep(3)
     else:
         print_chats_description(connection, chat_ids)
-    connection.stop()
 
 
 if __name__ == '__main__':
