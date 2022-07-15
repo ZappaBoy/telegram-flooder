@@ -56,9 +56,9 @@ def main():
     parser.add_argument('-r', '--repeat', type=int, default=1, required=False)
     args = parser.parse_args()
 
-    api_id = os.environ.get('STM_API_ID', config.api_id)
-    api_hash = os.environ.get('STM_API_HASH', config.api_hash)
-    phone = os.environ.get('STM_PHONE', config.phone)
+    api_id = os.environ.get('TELEGRAM_FLOODER_API_ID', config.api_id)
+    api_hash = os.environ.get('TELEGRAM_FLOODER_API_HASH', config.api_hash)
+    phone = os.environ.get('TELEGRAM_FLOODER_PHONE', config.phone)
 
     connection = get_connection(api_id, api_hash, phone)
     chat_ids = get_chats(connection)
