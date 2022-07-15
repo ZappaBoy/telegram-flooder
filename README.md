@@ -36,7 +36,8 @@ First of all, you can simply run the script without any flag to get the target `
 ```shell
 python main.py
 ```
-The command above prints chat titles and chat ids to choose a target `chat_id`.
+The command above ask for session login code that you receive from telegram.
+If the code is correct the above command prints chat titles and chat ids to choose a target `chat_id`.
 Use the target `chat_id` to flood that chat of messages:
 ```shell
 python main.py --chat_id {{CHAT_ID}} --text "{{TEXT}}" --repeat {{REPEAT_NUMBER}}
