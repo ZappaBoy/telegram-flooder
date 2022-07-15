@@ -15,9 +15,9 @@ phone = '393204956075'
 ```
 If you are interested to run the script using docker create instead a `.env` file like in the following example:
 ```shell
-STM_API_ID=12679118
-STM_API_HASH=07e16677bf054aa454f31b37e5f81cd1
-STM_PHONE=393204956075
+TELEGRAM_FLOODER_API_ID=12679118
+TELEGRAM_FLOODER_API_HASH=07e16677bf054aa454f31b37e5f81cd1
+TELEGRAM_FLOODER_PHONE=393204956075
 ```
 
 ## Install dependencies
@@ -41,7 +41,6 @@ Use the target `chat_id` to flood that chat of messages:
 ```shell
 python main.py --chat_id {{CHAT_ID}} --text "{{TEXT}}" --repeat {{REPEAT_NUMBER}}
 ```
-
 
 In alternative you can run the scripts using `docker-compose`
 ```shell
