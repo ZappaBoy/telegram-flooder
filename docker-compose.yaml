@@ -2,8 +2,8 @@ version: "3.3"
 
 services:
   app:
-    container_name: send-telegram-message
-    image: send_telegram_message:latest
+    container_name: telegram-flooder
+    image: telegram_flooder:latest
     build:
       context: .
       dockerfile: Dockerfile
